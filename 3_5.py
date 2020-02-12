@@ -9,15 +9,14 @@
 sum_total = 0
 while True:
     input_num = input('Введите строку из нескольких чисел, разделённых пробелами: '
-                      'Если хотите остановить суммирование нажмите + :    ')
-    list_num =input_num.split()
+                      'Если хотите остановить суммирование нажмите + :    ').split()
     sum = 0
-    for i in range(0, int(len(list_num))):
+    for i in range(0, int(len(input_num))):
         try:
-            sum +=int(list_num[i])
+            sum +=int(input_num[i])
         except ValueError:
             break
     sum_total += sum
     print(sum_total)
-    if '+' in list_num:
+    if '+' in input_num:
         break
