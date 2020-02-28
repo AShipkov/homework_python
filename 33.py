@@ -34,3 +34,4 @@ plt.plot(x, y)
 #plt.plot(a2, b2, 'bo')
 plt.axis('equal') #выравнивает оси абсцисс и ординат
 plt.show()
+
