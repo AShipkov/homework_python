@@ -13,3 +13,4 @@ z1 = (x**2+y**2)+15
 ax.plot_wireframe(x,y,z)
 ax.plot_surface(x, y, z1, cmap='inferno')
 show()
+
